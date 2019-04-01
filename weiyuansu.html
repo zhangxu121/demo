@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>伪元素</title>
+	<style type="text/css">
+		div.a{width: 500px;height: 200px;background:#ccc;}
+		div.a span:first-child{color: purple;font-weight:bold;}
+		div.a span:first-letter{color: red;font-size: 30px;}
+		div.s{width: 500px;height: 200px;background:#ccc;}
+		div.s p:before{content: 'ff'}
+		div.s p:after{content:'news'}
+	</style>
+</head>
+<body>
+   <div class="a">
+   	   <span>这是一个微元素</span>
+   	   <p>这是一个伪元素</p>
+   	   <p>这是一个伪元素</p>
+   	   <p>这是一个伪元素</p>
+   </div>
+   <div class="s">
+   	<p>这是一个伪元素</p>
+   </div>
+</body>
+</html>
